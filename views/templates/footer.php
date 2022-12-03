@@ -1,3 +1,4 @@
+
 <footer>
     <!--CHAT BOT -->
     <script>
@@ -25,9 +26,6 @@
             }
         }
     </script>
-
-
-
 
 </footer>
 

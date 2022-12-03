@@ -3,8 +3,8 @@
 
         public function __construct()
         {       
-                $this->views = new views();
-               $this->cargarModel();
+            $this->views = new views();
+            $this->cargarModel();
         }
 
 

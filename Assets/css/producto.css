@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    font-size: larger;
+    white-space: nowrap;
+}
+
+main {
+    display: inline-flex;
+    position: fixed;
+    height: 100vh;
+}
+
+.btnDisplay {
+    margin-top: 50vh;
+}
+
+
+.btnDisplay>a {
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.modelo {
+   display: flex;
+   justify-items: left;
+   padding: 0;
+}
+
+.modelo>li {
+    font-size: 15px;
+    color: black;
+}
+
+
+.modelo>li>a {
+    outline: none;
+    font-weight: 500;
+    left: 0;
+}
+
+.mainBar {
+    background-color: black;
+    height: 100vh;
+    width: 12vw;
+    padding: 0px 0px 0px 20px;
+    overflow: hidden;
+    color: #fff;
+    
+}
+
+.listaProductos {
+    list-style: none;
+    user-select: none;
+        color: #fff;
+
+    width: 100%;
+    margin-top: 25vh;
+    white-space: nowrap;
+}
+
+.listaProductos li {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.listaProductos a {
+    left: 0;
+    width: 50%;
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    text-decoration: none;
+    font-weight: 700;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+     color: #fff;
+    
+
+}
+
+a:link {
+     color: #fff;
+
+}
+
+a:visited {
+        color: #fff;
+
+}
+
+
+
+section {
+margin: auto;
+
+}
+
+
+.off{
+    width: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+
+
+
+.ani{
+    animation-name: ani;
+    animation-duration: 1s;
+}
+
+@keyframes ani {
+    0%{
+        opacity: 0.6;
+    }
+    100%{
+        left: 0.1;
+    }
+}
+
+/* MODELO DE TIENDA */
+
+
+.gridContainer{
+      width: 50vw;
+      display: inline-table;
+      margin: auto;
+      margin: 25vh 0px 0px 22vw;
+      white-space: nowrap;
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw;
+    column-gap: 10vw;
+    row-gap: 50px;
+    padding: 10px;
+}
+
+.gridItem {
+    border-radius: 10px;
+    background-color: #fff;
+    width: 20vw;
+    height: 50vh;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.cardTitle {
+    padding: 20px;
+    margin: auto;
+    top: 0;
+    justify-content: left;
+    margin: 0 0px 0px 22vw;
+    width: 20vw;
+}
+
+.cardTitle h2{
+    margin-top: 50px;
+}
+

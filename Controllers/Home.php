@@ -8,7 +8,6 @@ class Home extends controller
         session_start();
     }
     public function index()
-
     {
         $data['title'] = "Inicio";
         $this->views->getView('principal', 'index', $data);

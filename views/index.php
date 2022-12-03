@@ -1,4 +1,68 @@
 <?php include "views/templates/header.php" ?>
+
+
+
+
+
+<!--PRIMER ENCABEZADO: NOTICIAS-->
+<!--
+        <div class="slider_content">
+
+
+            <div class="mySlider fade ">
+                <img src="<?php echo BASE_URL ?>Assets/img/slider/img1.png" alt="">
+                <div class="informacion">
+
+                </div>
+            </div>
+
+            <div class="mySlider fade">
+                <img src="<?php echo BASE_URL ?>Assets/img/slider/img2.png" alt="">
+                <div class="informacion">
+
+                </div>
+            </div>
+
+            <div class="mySlider fade">
+                <img src="<?php echo BASE_URL ?>Assets/img/slider/img3.png" alt="">
+                <div class="informacion">
+
+                </div>
+            </div>
+
+            <div class="direcciones">
+                <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+            </div>
+
+
+        </div>-->
+<div class="slideshow-container">
+    <div class="slide">
+
+    </div>
+    <div class="slide">
+
+    </div>
+    <div class="slide">
+
+    </div>
+    <div class="slide">
+
+    </div>
+
+    <a id="neg" class="prev">&#10094;</a>
+    <a id="pos" class="next">&#10095;</a>
+</div>
+
+<div class="pill-container">
+    <span data-index="0" class="pill"></span>
+    <span data-index="1" class="pill"></span>
+    <span data-index="2" class="pill"></span>
+    <span data-index="3" class="pill"></span>
+    <div class="progress"></div>
+</div>
+
 <!--Descripción de la marca-->
 
 <div class="content-grip-description-row">

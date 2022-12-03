@@ -18,7 +18,7 @@
                     <h2><?php echo $data['title']; ?></h2>
                     <p>Inicia sesión para acceder al carrito</p>
                 </hgroup>
-
+    
                 <form method="post" class="log-form">
 
                     <div class="group log-input">
