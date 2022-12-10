@@ -1,5 +1,199 @@
+
+
+
 footer{
-    margin-top: 40px;
-    background-color: #b7b7b7;
-    width: 100vw;
+    height: 30vh;
+    margin: 30vh 0 0 0;
+    width: 100%;
+    background-color: #ccc;
+    bottom: 0;
 }
+
+thead > th{
+    gap: 200px;
+}
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: 18vw 20vw 10vw;
+    padding: 50px;
+    gap: 50px;
+    margin: 0 50% 0 50%;
+    justify-content: center;
+    row-gap: 5px;
+}
+
+.gridFotterItem{
+    height: 10vh;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.gridFotterItem:nth-child(1),
+.gridFotterItem:nth-child(2),
+.gridFotterItem:nth-child(3) {
+    font-size: 10px;
+}
+
+
+.gridFotterItem:nth-child(2){
+    border-left:  1px solid #171717;
+    border-right: 1px solid #171717;
+    padding: 0 0 0 30%;
+}
+
+.gridFotterItem:nth-child(1) > p {
+    font-size: 13px;
+}
+.gridFotterItem:nth-child(4),
+.gridFotterItem:nth-child(5),
+.gridFotterItem:nth-child(6) {
+    height: 40px;
+    
+}
+.gridFotterItem:nth-child(2){
+    height: 15vh;
+}
+.gridFotterItem:nth-child(2)> ul > li{
+    font-size: 15px;
+    margin: 10px 0 0 0 ;
+}
+
+.fotterItem2 {
+      grid-column: 2;
+      grid-row: 1 / span 2
+}
+
+.fotterItem3 {
+     grid-column: 3;
+     grid-row: 1 / span 2
+}
+
+.gridFotterItem:nth-child(3){
+    height: 15vh;
+}
+
+.gridFotterItem:nth-child(3) > ul > li{
+     font-size: 15px;
+     margin: 10px 0 0 0;
+}
+
+section{
+    margin: 0 0 100vh 0;
+}
+
+.btn-success{
+    padding: 15px 15px;
+    border: none;
+    background-color: #00b31b;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-success:hover{
+    opacity: 0.7;
+}
+
+
+
+
+
+.title{
+    margin: 0 0 0 10px;
+}
+.title > h1 {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

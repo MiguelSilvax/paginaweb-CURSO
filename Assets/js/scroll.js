@@ -1,36 +1,39 @@
-let scroll = document.querySelectorAll(".animado");
-let scroll1 = document.querySelectorAll(".animando");
 
 
-function mostrarScroll1(){
-let scrollTop = document.documentElement.scrollTop;
-    for(var i = 0 ; i < scroll1.length ; i ++ ){
-        let alturaElemento = scroll1[i].offsetTop;
-       
-        if(alturaElemento - 700  < scrollTop){
-            
-            scroll1[i].style.opacity = 1;
-            scroll1[i].classList.add("animadoDireccion");
-        }
+
+function up() {
+    const scrollInit = document.querySelector('.titleInit');
+    let rec = scrollInit.getBoundingClientRect();
+    if (rec.top < 0) {
+        scrollInit.classList.add('scrolled');
+    } else {
+        scrollInit.classList.remove('scrolled');
+        scrollInit.classList.add('js-scroll');
+
     }
 }
 
-function mostrarScroll(){
-let scrollTop = document.documentElement.scrollTop;
-    for(var i = 0 ; i < scroll.length ; i ++ ){
-        let alturaElemento = scroll[i].offsetTop;
-       
-        if(alturaElemento   < scrollTop){
-            
-            scroll[i].style.opacity = 1;
-            scroll[i].classList.add("animadoDireccion");
+window.addEventListener('scroll', up);
+up();
+
+
+/*-----------------------------------------------------*/
+
+/* Scroll para las descripciones*/
+
+/*-----------------------------------------------------*/ 
+
+function showScroll() {
+    let fadeContent = document.querySelectorAll('.fadeContent');
+    for (let i = 0; i < fadeContent.length; i++) {
+        let rec = fadeContent[i].getBoundingClientRect();
+        if (rec.top < 700) {
+            fadeContent[i].style.opacity = 1;
+            fadeContent[i].classList.add("animadoDireccion");
         }
     }
+
 }
 
+window.addEventListener('scroll', showScroll);
 
-
-
-
-window.addEventListener('scroll',mostrarScroll());
-window.addEventListener('scroll',mostrarScroll1());

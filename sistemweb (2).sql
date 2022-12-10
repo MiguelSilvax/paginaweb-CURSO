@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-11-2022 a las 05:41:22
+-- Tiempo de generación: 10-12-2022 a las 09:01:15
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 7.4.27
 
@@ -46,6 +46,36 @@ CREATE TABLE `cliente` (
   `Telefono` varchar(9) COLLATE utf8mb4_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
+--
+-- Volcado de datos para la tabla `cliente`
+--
+
+INSERT INTO `cliente` (`DNI`, `Nombres`, `Apellidos`, `Direccion`, `Telefono`) VALUES
+('75614825', 'yahaira', 'bejar', 'calle los alamos', '994856412');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `contactos`
+--
+
+CREATE TABLE `contactos` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(30) DEFAULT NULL,
+  `mail` varchar(50) DEFAULT NULL,
+  `numero` char(9) DEFAULT NULL,
+  `direccion` varchar(80) DEFAULT NULL,
+  `asunto` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `contactos`
+--
+
+INSERT INTO `contactos` (`id`, `nombre`, `mail`, `numero`, `direccion`, `asunto`) VALUES
+(1, 'miguel', 'miguel@mail.com', '98654321', 'los alamos', 'Saludos'),
+(8, 'asdasd', 'asdasd', 'asdasd', 'asdasd', 'asdadd');
+
 -- --------------------------------------------------------
 
 --
@@ -71,6 +101,14 @@ CREATE TABLE `login_cliente` (
   `Mail` varchar(50) COLLATE utf8mb4_bin NOT NULL,
   `clave` varchar(30) COLLATE utf8mb4_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+
+--
+-- Volcado de datos para la tabla `login_cliente`
+--
+
+INSERT INTO `login_cliente` (`DNI`, `Usuario`, `Mail`, `clave`) VALUES
+('75610782', 'miguel', 'miguel@mail.com', 'cliente1'),
+('75614825', 'yahaira', 'yaha@mail.com', 'cliente2');
 
 -- --------------------------------------------------------
 
@@ -108,6 +146,12 @@ ALTER TABLE `cliente`
   ADD PRIMARY KEY (`DNI`);
 
 --
+-- Indices de la tabla `contactos`
+--
+ALTER TABLE `contactos`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `detalle_pedido`
 --
 ALTER TABLE `detalle_pedido`
@@ -137,6 +181,12 @@ ALTER TABLE `producto`
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `contactos`
+--
+ALTER TABLE `contactos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `detalle_pedido`

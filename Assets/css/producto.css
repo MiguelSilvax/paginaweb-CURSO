@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 
 }
 
@@ -15,6 +16,7 @@ main {
     display: inline-flex;
     position: fixed;
     height: 100vh;
+    white-space: nowrap;
 }
 
 .btnDisplay {
@@ -29,38 +31,41 @@ main {
 
 
 .modelo {
-   display: flex;
-   justify-items: left;
-   padding: 0;
+    white-space: nowrap;
+    justify-content: left;
+    height: 20px;
+    padding: 0;
+    text-align: center;
 }
 
 .modelo>li {
     font-size: 15px;
     color: black;
+    text-decoration: none;
+    justify-items: left;
 }
 
 
 .modelo>li>a {
     outline: none;
     font-weight: 500;
-    left: 0;
+    justify-content: left;
+    text-decoration: none;
 }
 
 .mainBar {
-    background-color: black;
+    white-space: nowrap;
     height: 100vh;
-    width: 12vw;
-    padding: 0px 0px 0px 20px;
+
+
     overflow: hidden;
-    color: #fff;
-    
+    color: black;
 }
 
 .listaProductos {
     list-style: none;
     user-select: none;
-        color: #fff;
-
+    color: black;
     width: 100%;
     margin-top: 25vh;
     white-space: nowrap;
@@ -75,88 +80,78 @@ main {
     white-space: nowrap;
 }
 
-.listaProductos a {
+.listaProductos div  {
     left: 0;
     width: 50%;
     height: 30px;
     padding: 20px;
     display: flex;
-    text-decoration: none;
     font-weight: 700;
     white-space: nowrap;
     align-items: center;
-    justify-content: center;
+    justify-items: left;
     position: relative;
-     color: #fff;
-    
-
+    color: black
 }
 
 a:link {
-     color: #fff;
-
+    color: black
 }
 
 a:visited {
-        color: #fff;
-
+    color: black
 }
 
 
 
-section {
-margin: auto;
-
-}
 
 
-.off{
+.off {
     width: 0;
     margin: 0;
-    opacity: 0;
-}
-
-
-
-
-.ani{
+    padding: 0;
+    animation-duration: 0.3s;
     animation-name: ani;
-    animation-duration: 1s;
 }
 
 @keyframes ani {
-    0%{
-        opacity: 0.6;
+    0% {
+        width: 5vw;
     }
-    100%{
-        left: 0.1;
+
+    100% {
+        width: 0vw;
     }
 }
+
+
+
+
 
 /* MODELO DE TIENDA */
 
 
-.gridContainer{
-      width: 50vw;
-      display: inline-table;
-      margin: auto;
-      margin: 25vh 0px 0px 22vw;
-      white-space: nowrap;
+.gridContainer {
+    width: 80vw;
+    height: 100vh;
+    display: inline-table;
+    margin: auto;
+    margin: 2vh 0px 0px 15vw;
+    white-space: nowrap;
     display: grid;
-    grid-template-columns: 15vw 15vw 15vw;
-    column-gap: 10vw;
-    row-gap: 50px;
-    padding: 10px;
+    grid-template-columns: 15vw 15vw 15vw ;
+    column-gap: 150px;
+    row-gap: 150px;
 }
 
 .gridItem {
     border-radius: 10px;
-    background-color: #fff;
     width: 20vw;
     height: 50vh;
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    overflow: hidden;
 }
 
 
@@ -165,11 +160,63 @@ margin: auto;
     margin: auto;
     top: 0;
     justify-content: left;
-    margin: 0 0px 0px 22vw;
+    text-align: center;
     width: 20vw;
 }
 
-.cardTitle h2{
+.cardTitle h2 {
     margin-top: 50px;
 }
 
+
+img{
+    width: 15vw;
+}
+
+
+
+.pasalera {
+    width: 100%;
+    height: 70vh;
+}
+
+
+.title > p{
+    font-size: 15px;
+}
+
+.pasalera{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.columna1{
+    width: 50%;
+    height: 70vh;
+}
+
+.columna2{
+    background: rgb(240, 240, 240);
+     width: 50%;
+     height: 70vh;
+     border-radius: 20px;
+     padding: 50px;
+     display: block;
+}
+
+#imgPasarela{
+    width: 100%;
+    height: 70vh;
+}
+
+
+
+
+
+
+.guardar{
+    margin: 20px 0;
+    cursor: pointer;
+    padding: 15px 20px;
+}

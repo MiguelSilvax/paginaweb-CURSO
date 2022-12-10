@@ -12,6 +12,6 @@ function saludar(){
        navBar.classList.add("off");
     }else{
         navBar.classList.remove("off");
-
+        
     }
 }

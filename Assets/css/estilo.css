@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -11,7 +10,6 @@ body{
         background-color: #e9e9e9;
         font-size: 20px;
         text-decoration: none;    
-           
 }
 
 
@@ -223,7 +221,7 @@ body{
     opacity: 0.5;
 }
 
-.animado , .animando{
+ .fadeContent {
     opacity: 0;
     transition:  all 0.4s;
 }
@@ -231,6 +229,7 @@ body{
 .animadoDireccion{
     animation:  direccion 1s;
 }
+
 
 @keyframes direccion {
     0%{
@@ -252,17 +251,18 @@ body{
     padding: 100px;
     grid-gap: 100px;
     justify-content: center;
+    align-items: center;
+    margin: 20vh 0 20vh 0 ;
 }
 .content-grip-description-row > div{
     text-align: center;
     background-color: white;
-    padding: 10%;
+    padding: 20px;
     border-radius: 8px;
     overflow: hidden;
-    align-items: center;
+    align-items: left;
     display: block;
-    justify-content: center;
-    align-items: center;
+    height: 25vh;
 }
 
 .content-img{
@@ -281,5 +281,17 @@ body{
 
 
 
+.js-scroll{
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.scrolled{
+    opacity: 0;
+    display: block;
+    transition: opacity 500ms;
+    z-index: 1;
+   position: relative;
+}
 
 

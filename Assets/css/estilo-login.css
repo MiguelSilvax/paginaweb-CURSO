@@ -6,19 +6,39 @@
 }
 
 
+section{
+    margin: 20vh 0 0 0 ;
+}
+
 
 hgroup {
     text-align: center;
     margin-top: 4em;
 }
 
+button[type="submit"], button[type="Reset"]{
+    width: 100%;
+    border: none;
+    height: 5vh;
+    cursor: pointer;
+    margin: 10px 0 0 0 ;
+}
 
 
+.btn-primary{
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-danger{
+        background-color: #ff2651;
+        color: #fff;
+}
 /*------------------------------------------------------------------
 [ Login Form ]*/
 
 .log-form {
-    width: 100vw;
+    width: 30vw;
     margin: 4em auto;
     padding: 3em 2em 2em 2em;
     background: #fafafa;
@@ -101,11 +121,12 @@ input[type="checkbox"]:checked+label {
 .sign-in {
     margin: auto;
     display: flex;
-    width: 100vw;
-
+    width: 100%;
     justify-content: center;
     gap:10px;
 }
 
-
+a:visited{
+    color: #007bff;
+}
 
