@@ -24,4 +24,26 @@
         padding: 0 20px;
     }
 
+
+    .content-grip-description-row > div{
+        height: 28vh;
+    }
+
+
+    .contenedor_news{
+        
+        display: block;
+        justify-content: center;       
+
+    }
+
+    .contenedor_news> span{
+        font-size: 30px;
+        margin: 20px 0;
+        padding: 20px 0;
+        font-weight: 600;
+    }
+    .grid-news{
+        margin-left: 150px;
+    }
 }
